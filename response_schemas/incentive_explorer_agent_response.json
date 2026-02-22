@@ -1,0 +1,52 @@
+{
+  "agent_name": "Incentive Explorer Agent",
+  "agent_id": "699b89f3108f0261e19ab0e3",
+  "description": "Runs Level 1 gameplay \u2014 generates trivia questions about Frederick County business incentives, validates answers, provides explanations, awards points, and tracks quiz progress",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "quest_number": "number",
+    "total_quests": "number",
+    "scenario": "string",
+    "question": "string",
+    "options": {
+      "A": "string",
+      "B": "string",
+      "C": "string",
+      "D": "string"
+    },
+    "feedback": "string",
+    "correct_answer": "string",
+    "explanation": "string",
+    "points_earned": "number",
+    "streak_count": "number",
+    "streak_bonus": "number",
+    "total_points": "number",
+    "achievement_unlocked": "string",
+    "is_complete": "boolean",
+    "level_summary": "string"
+  },
+  "example_response": {
+    "quest_number": 0,
+    "total_quests": 0,
+    "scenario": "sample string",
+    "question": "sample string",
+    "options": {
+      "A": "sample string",
+      "B": "sample string",
+      "C": "sample string",
+      "D": "sample string"
+    },
+    "feedback": "sample string",
+    "correct_answer": "sample string",
+    "explanation": "sample string",
+    "points_earned": 0,
+    "streak_count": 0,
+    "streak_bonus": 0,
+    "total_points": 0,
+    "achievement_unlocked": "sample string",
+    "is_complete": false,
+    "level_summary": "sample string"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "agent_name": "Progress Advisor Agent",
+  "agent_id": "699b89f3ba7d62583e0a4a42",
+  "description": "Analyzes player's completed activities, quiz scores, and adventure choices to generate a personalized business readiness profile with recommended county incentives and next startup steps",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "overall_score": "number",
+    "completion_percentage": "number",
+    "rank": "string",
+    "strengths": [
+      "string"
+    ],
+    "knowledge_gaps": [
+      "string"
+    ],
+    "recommended_incentives": [
+      {
+        "name": "string",
+        "description": "string",
+        "priority": "string"
+      }
+    ],
+    "next_steps": [
+      {
+        "step": "string",
+        "reason": "string",
+        "priority": "number"
+      }
+    ],
+    "level1_analysis": {
+      "score": "number",
+      "accuracy": "number",
+      "best_topic": "string",
+      "weakest_topic": "string"
+    },
+    "level2_analysis": {
+      "path_taken": "string",
+      "business_type": "string",
+      "completion": "number",
+      "optimal_choices": "number"
+    },
+    "achievements_summary": {
+      "earned": "number",
+      "total": "number",
+      "recent": [
+        "string"
+      ]
+    },
+    "personalized_message": "string"
+  },
+  "example_response": {
+    "overall_score": 0,
+    "completion_percentage": 0,
+    "rank": "sample string",
+    "strengths": [
+      "sample string"
+    ],
+    "knowledge_gaps": [
+      "sample string"
+    ],
+    "recommended_incentives": [
+      {
+        "name": "sample string",
+        "description": "sample string",
+        "priority": "sample string"
+      }
+    ],
+    "next_steps": [
+      {
+        "step": "sample string",
+        "reason": "sample string",
+        "priority": 0
+      }
+    ],
+    "level1_analysis": {
+      "score": 0,
+      "accuracy": 0,
+      "best_topic": "sample string",
+      "weakest_topic": "sample string"
+    },
+    "level2_analysis": {
+      "path_taken": "sample string",
+      "business_type": "sample string",
+      "completion": 0,
+      "optimal_choices": 0
+    },
+    "achievements_summary": {
+      "earned": 0,
+      "total": 0,
+      "recent": [
+        "sample string"
+      ]
+    },
+    "personalized_message": "sample string"
+  }
+}

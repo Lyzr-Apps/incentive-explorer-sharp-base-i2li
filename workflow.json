@@ -1,0 +1,13 @@
+{
+  "nodes": [
+    {"id": "input_node", "type": "Input", "label": "Player Dashboard", "nodeCategory": "input"},
+    {"id": "incentive_explorer_agent", "type": "Agent", "label": "Incentive Explorer Agent", "nodeCategory": "agent"},
+    {"id": "business_quest_agent", "type": "Agent", "label": "Business Quest Agent", "nodeCategory": "agent"},
+    {"id": "progress_advisor_agent", "type": "Agent", "label": "Progress Advisor Agent", "nodeCategory": "agent"}
+  ],
+  "edges": [
+    {"source": "input_node", "target": "incentive_explorer_agent"},
+    {"source": "input_node", "target": "business_quest_agent"},
+    {"source": "input_node", "target": "progress_advisor_agent"}
+  ]
+}

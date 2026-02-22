@@ -1,0 +1,29 @@
+{
+  "agent_name": "Incentive Explorer Agent",
+  "agent_id": "699b89f3108f0261e19ab0e3",
+  "agent_type": "json",
+  "accessor": "json",
+  "has_module_outputs": false,
+  "response_schema": {
+    "quest_number": "number",
+    "total_quests": "number",
+    "scenario": "string",
+    "question": "string",
+    "options": {
+      "A": "string",
+      "B": "string",
+      "C": "string",
+      "D": "string"
+    },
+    "feedback": "string",
+    "correct_answer": "string",
+    "explanation": "string",
+    "points_earned": "number",
+    "streak_count": "number",
+    "streak_bonus": "number",
+    "total_points": "number",
+    "achievement_unlocked": "string",
+    "is_complete": "boolean",
+    "level_summary": "string"
+  }
+}

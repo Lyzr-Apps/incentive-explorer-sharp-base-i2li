@@ -1,0 +1,18 @@
+{
+  "agents": {
+    "incentive_explorer": {
+      "agent_id": "699b89f3108f0261e19ab0e3",
+      "name": "Incentive Explorer Agent",
+      "rag_id": "699b89ae3dc9e9e528285e43"
+    },
+    "business_quest": {
+      "agent_id": "699b89f3108f0261e19ab0e5",
+      "name": "Business Quest Agent",
+      "rag_id": "699b89af3dc9e9e528285e45"
+    },
+    "progress_advisor": {
+      "agent_id": "699b89f3ba7d62583e0a4a42",
+      "name": "Progress Advisor Agent"
+    }
+  }
+}

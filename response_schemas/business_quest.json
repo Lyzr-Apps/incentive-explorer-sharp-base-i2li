@@ -1,0 +1,30 @@
+{
+  "agent_name": "Business Quest Agent",
+  "agent_id": "699b89f3108f0261e19ab0e5",
+  "agent_type": "json",
+  "accessor": "json",
+  "has_module_outputs": false,
+  "response_schema": {
+    "step_number": "number",
+    "total_steps": "number",
+    "step_title": "string",
+    "narrative": "string",
+    "choices": [
+      {
+        "id": "string",
+        "icon": "string",
+        "title": "string",
+        "description": "string"
+      }
+    ],
+    "feedback": "string",
+    "chosen_path": "string",
+    "explanation": "string",
+    "did_you_know": "string",
+    "points_earned": "number",
+    "total_points": "number",
+    "achievement_unlocked": "string",
+    "is_complete": "boolean",
+    "adventure_summary": "string"
+  }
+}
