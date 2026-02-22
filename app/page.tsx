@@ -1,10 +1,10 @@
 'use client'
 
-import React, { useState, useEffect, useRef, useCallback } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import { callAIAgent } from '@/lib/aiAgent'
-import { FiAward, FiTarget, FiMap, FiUser, FiChevronRight, FiStar, FiZap, FiTrendingUp, FiCheckCircle, FiXCircle, FiArrowLeft, FiPlay, FiLock, FiUnlock, FiBarChart2, FiBookOpen, FiCompass, FiFlag, FiGift, FiHeart, FiInfo, FiLayers, FiShield } from 'react-icons/fi'
+import { FiAward, FiTarget, FiMap, FiUser, FiChevronRight, FiStar, FiZap, FiTrendingUp, FiCheckCircle, FiXCircle, FiArrowLeft, FiPlay, FiLock, FiBarChart2, FiCompass, FiFlag, FiGift, FiInfo, FiLayers, FiShield } from 'react-icons/fi'
 import { HiOutlineLightBulb, HiOutlineSparkles, HiOutlineTrophy, HiOutlineRocketLaunch, HiOutlineBuildingOffice, HiOutlineDocumentText, HiOutlineClipboardDocumentList } from 'react-icons/hi2'
-import { BsBuilding, BsLightning, BsStars, BsTrophy, BsShieldCheck } from 'react-icons/bs'
+import { BsBuilding, BsLightning, BsStars } from 'react-icons/bs'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
@@ -232,11 +232,11 @@ function generateSessionId(): string {
 }
 
 // ===== HELPER: Render markdown =====
-function renderMarkdown(text: string) {
+function renderMarkdown(text: string): React.ReactNode {
   if (!text) return null
   return (
     <div className="space-y-2">
-      {text.split('\n').map((line, i) => {
+      {text.split('\n').map((line: string, i: number) => {
         if (line.startsWith('### ')) return <h4 key={i} className="font-semibold text-sm mt-3 mb-1">{line.slice(4)}</h4>
         if (line.startsWith('## ')) return <h3 key={i} className="font-semibold text-base mt-3 mb-1">{line.slice(3)}</h3>
         if (line.startsWith('# ')) return <h2 key={i} className="font-bold text-lg mt-4 mb-2">{line.slice(2)}</h2>
@@ -249,11 +249,11 @@ function renderMarkdown(text: string) {
   )
 }
 
-function formatInline(text: string) {
+function formatInline(text: string): React.ReactNode {
   const parts = text.split(/\*\*(.*?)\*\*/g)
   if (parts.length === 1) return text
   return parts.map((part, i) =>
-    i % 2 === 1 ? <strong key={i} className="font-semibold">{part}</strong> : part
+    i % 2 === 1 ? <strong key={i} className="font-semibold">{part}</strong> : <React.Fragment key={i}>{part}</React.Fragment>
   )
 }
 
